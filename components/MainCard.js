@@ -1,5 +1,7 @@
 import styles from "./MainCard.module.css";
 
+import Image from "next/image";
+
 const getWeatherIcon = (code) => {
   if (code === 0) return "01d.svg";
   if ([1, 2].includes(code)) return "02d.svg";
@@ -38,7 +40,7 @@ export const MainCard = ({ city, country, description, iconName, unitSystem, wea
       </h1>
 
       <div className={styles.icon}>
-        <img src={`/icons/${getWeatherIcon(weatherData.weathercode)}`} alt="weather icon" />
+        <image src={`/icons/${getWeatherIcon(weatherData.weathercode)}`} alt="weather icon" width={80} height={80} />
       </div>
 
    <p className={styles.time}>
