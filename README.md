@@ -19,6 +19,9 @@ Check the current weather In Nantes city. Switch between metric and imperial uni
 7- Error handling and loading info
 
 ## Installation
+
+git clone https://github.com/thomasguesneau-data/open-meteo.git
+
 API Open-Meteo
 
 `npm install`
